@@ -1,0 +1,16 @@
+:root{
+    --background: #3C3C41;
+}
+
+/*
+ ========== Outils ==========
+*/
+@import "tools/reset";
+
+/*
+ ========== Generic ==========
+*/
+
+body{
+    background: var(--background);
+}
