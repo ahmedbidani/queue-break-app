@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+* {
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currentlysupported by Chrome, Opera and Firefox */
+
+  //Design ScrollBar
+  /* width */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #f44336;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+  }
+}
+
+.container {
+  position: absolute;
+  background: #f4f6f8;
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  background: #ffff;
+  height: 60px;
+  .logo {
+    width: 100px;
+    position: relative;
+    float: left;
+    top: 50%;
+    transform: translateY(-50%);
+    img {
+      max-width: 100%;
+    }
+  }
+  .user {
+    float: right;
+    display: flex;
+    line-height: 60px;
+    margin-right: 10px;
+    cursor: pointer;
+    img {
+      margin: 5px;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+.content {
+  margin: 10px;
+  display: flex;
+  height: calc(100% - 82px);
+  .userList {
+    background: #ffff;
+    float: left;
+    width: 30%;
+    padding: 10px;
+    overflow-y: scroll;
+  }
+  .body {
+    background: #ffff;
+    width: 68%;
+    margin-left: 2%;
+    padding: 10px;
+  }
+}
+
+.peopleList {
+  ul {
+    padding: 5px;
+    li {
+      padding-bottom: 10px;
+    }
+  }
+
+  img {
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .about {
+    float: left;
+    margin-top: 10px;
+    padding-left: 8px;
+  }
+
+  .status {
+    color: gray;
+    line-height: 20px;
+  }
+
+  .clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}

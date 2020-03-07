@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { BrowserRouter as Router, Switch, Route, useLocation } from 'react-router-dom';
-import SignIn from "./containers/guest/sign-in/SignIn";
+import Home from "./containers/protected/home/Home";
 
 
 function NoMatch() {
@@ -19,7 +19,7 @@ export default (): React.ReactElement => (
     <Router >
         <Switch>
             <Route path="/" >
-                <SignIn />
+                <Home />
             </Route>
             <Route path="*">
                 <NoMatch />
