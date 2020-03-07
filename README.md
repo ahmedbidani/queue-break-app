@@ -1,2 +1,2 @@
-# rct-electron-starter
-This is a Electron reactjs boilerplate for rapid cross-platform application development
+# Queue break app 
+This is a Electron reactjs project 
