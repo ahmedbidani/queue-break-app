@@ -1,6 +1,7 @@
 import * as React from "react"
 import styles from "./home.module.scss";
 import Logo from "../../../assets/images/logo.png";
+import User from "../../../assets/images/user.png";
 
 export interface Clock {
     date: Date;
@@ -11,11 +12,37 @@ const Home: React.FC = () => {
         <div className={styles.container}>
             <div className={styles.header}>
                 <div className={styles.logo}>
-                    <img src={Logo}/>
+                    <img src={Logo} />
                 </div>
                 <div className={styles.user}>
-                    <img src="https://3znvnpy5ek52a26m01me9p1t-wpengine.netdna-ssl.com/wp-content/uploads/2017/07/noimage_person.png"/>
+                    <img src="https://3znvnpy5ek52a26m01me9p1t-wpengine.netdna-ssl.com/wp-content/uploads/2017/07/noimage_person.png" />
                     <span>Benbelgacem Hichem</span>
+                </div>
+            </div>
+            <div className={styles.navBar}>
+                <div className={[styles.item, styles.activBg].join(' ')}>
+                    <img src={User} />
+                    <div>
+                        <span>User</span>
+                    </div>
+                </div>
+                <div className={styles.item}>
+                <img src={User} />
+                    <div>
+                        <span>User</span>
+                    </div>
+                </div>
+                <div className={styles.item}>
+                <img src={User} />
+                    <div>
+                        <span>User</span>
+                    </div>
+                </div>
+                <div className={styles.item}>
+                <img src={User} />
+                    <div>
+                        <span>User</span>
+                    </div>
                 </div>
             </div>
             <div className={styles.content}>
@@ -27,7 +54,7 @@ const Home: React.FC = () => {
                                 <div className={styles.about}>
                                     <div className={styles.name}>Vincent Porter</div>
                                     <div className={styles.status}>
-                                    <i className="fa fa-circle online"></i> online
+                                        <i className="fa fa-circle online"></i> online
                                     </div>
                                 </div>
                             </li>
@@ -36,7 +63,7 @@ const Home: React.FC = () => {
                                 <div className={styles.about}>
                                     <div className={styles.name}>Vincent Porter</div>
                                     <div className={styles.status}>
-                                    <i className="fa fa-circle online"></i> online
+                                        <i className="fa fa-circle online"></i> online
                                     </div>
                                 </div>
                             </li>
@@ -45,7 +72,7 @@ const Home: React.FC = () => {
                                 <div className={styles.about}>
                                     <div className={styles.name}>Vincent Porter</div>
                                     <div className={styles.status}>
-                                    <i className="fa fa-circle online"></i> online
+                                        <i className="fa fa-circle online"></i> online
                                     </div>
                                 </div>
                             </li>
@@ -54,7 +81,7 @@ const Home: React.FC = () => {
                                 <div className={styles.about}>
                                     <div className={styles.name}>Vincent Porter</div>
                                     <div className={styles.status}>
-                                    <i className="fa fa-circle online"></i> online
+                                        <i className="fa fa-circle online"></i> online
                                     </div>
                                 </div>
                             </li>
@@ -63,7 +90,7 @@ const Home: React.FC = () => {
                                 <div className={styles.about}>
                                     <div className={styles.name}>Vincent Porter</div>
                                     <div className={styles.status}>
-                                    <i className="fa fa-circle online"></i> online
+                                        <i className="fa fa-circle online"></i> online
                                     </div>
                                 </div>
                             </li>
@@ -72,7 +99,7 @@ const Home: React.FC = () => {
                                 <div className={styles.about}>
                                     <div className={styles.name}>Vincent Porter</div>
                                     <div className={styles.status}>
-                                    <i className="fa fa-circle online"></i> online
+                                        <i className="fa fa-circle online"></i> online
                                     </div>
                                 </div>
                             </li>
@@ -81,7 +108,7 @@ const Home: React.FC = () => {
                                 <div className={styles.about}>
                                     <div className={styles.name}>Vincent Porter</div>
                                     <div className={styles.status}>
-                                    <i className="fa fa-circle online"></i> online
+                                        <i className="fa fa-circle online"></i> online
                                     </div>
                                 </div>
                             </li>
@@ -90,7 +117,7 @@ const Home: React.FC = () => {
                                 <div className={styles.about}>
                                     <div className={styles.name}>Vincent Porter</div>
                                     <div className={styles.status}>
-                                    <i className="fa fa-circle online"></i> online
+                                        <i className="fa fa-circle online"></i> online
                                     </div>
                                 </div>
                             </li>
@@ -99,7 +126,7 @@ const Home: React.FC = () => {
                                 <div className={styles.about}>
                                     <div className={styles.name}>Vincent Porter</div>
                                     <div className={styles.status}>
-                                    <i className="fa fa-circle online"></i> online
+                                        <i className="fa fa-circle online"></i> online
                                     </div>
                                 </div>
                             </li>
@@ -108,7 +135,7 @@ const Home: React.FC = () => {
                                 <div className={styles.about}>
                                     <div className={styles.name}>Vincent Porter</div>
                                     <div className={styles.status}>
-                                    <i className="fa fa-circle online"></i> online
+                                        <i className="fa fa-circle online"></i> online
                                     </div>
                                 </div>
                             </li>
@@ -117,7 +144,7 @@ const Home: React.FC = () => {
                                 <div className={styles.about}>
                                     <div className={styles.name}>Vincent Porter</div>
                                     <div className={styles.status}>
-                                    <i className="fa fa-circle online"></i> online
+                                        <i className="fa fa-circle online"></i> online
                                     </div>
                                 </div>
                             </li>
@@ -126,7 +153,7 @@ const Home: React.FC = () => {
                                 <div className={styles.about}>
                                     <div className={styles.name}>Vincent Porter</div>
                                     <div className={styles.status}>
-                                    <i className="fa fa-circle online"></i> online
+                                        <i className="fa fa-circle online"></i> online
                                     </div>
                                 </div>
                             </li>
@@ -135,7 +162,7 @@ const Home: React.FC = () => {
                                 <div className={styles.about}>
                                     <div className={styles.name}>Vincent Porter</div>
                                     <div className={styles.status}>
-                                    <i className="fa fa-circle online"></i> online
+                                        <i className="fa fa-circle online"></i> online
                                     </div>
                                 </div>
                             </li>
@@ -144,7 +171,7 @@ const Home: React.FC = () => {
                                 <div className={styles.about}>
                                     <div className={styles.name}>Vincent Porter</div>
                                     <div className={styles.status}>
-                                    <i className="fa fa-circle online"></i> online
+                                        <i className="fa fa-circle online"></i> online
                                     </div>
                                 </div>
                             </li>
@@ -153,7 +180,7 @@ const Home: React.FC = () => {
                                 <div className={styles.about}>
                                     <div className={styles.name}>Vincent Porter</div>
                                     <div className={styles.status}>
-                                    <i className="fa fa-circle online"></i> online
+                                        <i className="fa fa-circle online"></i> online
                                     </div>
                                 </div>
                             </li>
@@ -162,7 +189,7 @@ const Home: React.FC = () => {
                                 <div className={styles.about}>
                                     <div className={styles.name}>Vincent Porter</div>
                                     <div className={styles.status}>
-                                    <i className="fa fa-circle online"></i> online
+                                        <i className="fa fa-circle online"></i> online
                                     </div>
                                 </div>
                             </li>
@@ -171,7 +198,7 @@ const Home: React.FC = () => {
                                 <div className={styles.about}>
                                     <div className={styles.name}>Vincent Porter</div>
                                     <div className={styles.status}>
-                                    <i className="fa fa-circle online"></i> online
+                                        <i className="fa fa-circle online"></i> online
                                     </div>
                                 </div>
                             </li>
@@ -180,7 +207,7 @@ const Home: React.FC = () => {
                                 <div className={styles.about}>
                                     <div className={styles.name}>Vincent Porter</div>
                                     <div className={styles.status}>
-                                    <i className="fa fa-circle online"></i> online
+                                        <i className="fa fa-circle online"></i> online
                                     </div>
                                 </div>
                             </li>
@@ -189,7 +216,7 @@ const Home: React.FC = () => {
                                 <div className={styles.about}>
                                     <div className={styles.name}>Vincent Porter</div>
                                     <div className={styles.status}>
-                                    <i className="fa fa-circle online"></i> online
+                                        <i className="fa fa-circle online"></i> online
                                     </div>
                                 </div>
                             </li>
@@ -198,7 +225,7 @@ const Home: React.FC = () => {
                                 <div className={styles.about}>
                                     <div className={styles.name}>Vincent Porter</div>
                                     <div className={styles.status}>
-                                    <i className="fa fa-circle online"></i> online
+                                        <i className="fa fa-circle online"></i> online
                                     </div>
                                 </div>
                             </li>
@@ -207,7 +234,7 @@ const Home: React.FC = () => {
                                 <div className={styles.about}>
                                     <div className={styles.name}>Vincent Porter</div>
                                     <div className={styles.status}>
-                                    <i className="fa fa-circle online"></i> online
+                                        <i className="fa fa-circle online"></i> online
                                     </div>
                                 </div>
                             </li>

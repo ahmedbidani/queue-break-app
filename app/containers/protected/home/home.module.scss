@@ -69,12 +69,39 @@
   }
 }
 
+.activBg {
+  background-color: #353535;
+}
+.navBar {
+  background-color: #3C3C41;
+  height: 100px;
+  clear: #ffff;
+  display: flex;
+  .item {
+    height: 100px;
+    width: 25%;
+    align-self: center;
+    text-align: center;
+    border-right: 1px solid #353535;
+    padding-top: 25px;
+    cursor: pointer;
+    span {
+      color: #ffff;
+      font-size: 12px;
+    }
+    img {
+      margin-bottom: 10px;
+      width: 15px;
+    }
+  }
+}
+
 .content {
   margin: 10px;
   display: flex;
-  height: calc(100% - 82px);
+  height: calc(100% - 182px);
   .userList {
-    background: #ffff;
+    background: #3C3C41;
     float: left;
     width: 30%;
     padding: 10px;
@@ -101,16 +128,18 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    border: 1.5px solid #ffff;
   }
 
   .about {
     float: left;
     margin-top: 10px;
     padding-left: 8px;
+    color: #ffff;
   }
 
   .status {
-    color: gray;
+    color: #92959E;
     line-height: 20px;
   }
 
